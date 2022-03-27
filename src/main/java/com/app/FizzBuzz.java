@@ -14,8 +14,9 @@ public class FizzBuzz {
 	}
 	
 	public static String generateResultFuzzBuzz2(int number) {
-		
-		 if (number % 7 == 0)
+		if (number % 21 == 0)
+			return FizzBuzzConstants.FIZZ_POP;
+		else if (number % 7 == 0)
 			 return FizzBuzzConstants.POP; // Multiples of Seven Return Pop
 		return Integer.toString(number) ;
 	}

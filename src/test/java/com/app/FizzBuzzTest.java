@@ -32,6 +32,7 @@ public class FizzBuzzTest {
 	public void fifteenReturnFizzBuzz() {
 		Assert.assertEquals(FizzBuzzConstants.FIZZ_BUZZ, FizzBuzz.generateResultFuzzBuzz1(15));
 	}
+ 
 
 	@Test
 	public void allcondtionsFizzBuzz() {
@@ -49,9 +50,16 @@ public class FizzBuzzTest {
 		Assert.assertEquals(FizzBuzzConstants.FIZZ, FizzBuzz.generateResultFuzzBuzz1(123));
 	}
 	
+	// Multiples of Seven Return Pop
 	@Test
 	public void sevenReturnPop() {
 		Assert.assertEquals(FizzBuzzConstants.POP, FizzBuzz.generateResultFuzzBuzz2(7));
+	}
+	
+	//Multiples of Three and Seven Return Fizz Pop
+	@Test
+	public void twentyOneReturnFizPop() {
+		Assert.assertEquals(FizzBuzzConstants.FIZZ_POP, FizzBuzz.generateResultFuzzBuzz2(21));
 	}
 
 }
