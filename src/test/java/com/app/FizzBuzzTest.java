@@ -4,11 +4,16 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class FizzBuzzTest {
-	
+
 	@Test
 	public void oneReturnOne() {
-		Assert.assertEquals("1", FizzBuzz.generateResultFuzzBuzz1());
+		Assert.assertEquals("1", FizzBuzz.generateResultFuzzBuzz1(1));
+
+	}
 	
+	@Test
+	public void threeReturnFizz() {
+		Assert.assertEquals(FizzBuzzConstants.FIZZ, FizzBuzz.generateResultFuzzBuzz1(3));
 	}
 
 }
