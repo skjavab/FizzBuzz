@@ -14,7 +14,9 @@ public class FizzBuzz {
 	}
 	
 	public static String generateResultFuzzBuzz2(int number) {
-		 if (number % 35 == 0)
+		if (number % 105 == 0)
+			return  FizzBuzzConstants.FIZZ_BUZZ_POP;
+		else  if (number % 35 == 0)
 			 return FizzBuzzConstants.BUZZ_POP;
 		 else if (number % 21 == 0)
 			return FizzBuzzConstants.FIZZ_POP;
