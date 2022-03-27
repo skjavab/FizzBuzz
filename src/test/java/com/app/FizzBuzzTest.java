@@ -93,6 +93,10 @@ public class FizzBuzzTest {
 
 	@Test
 	public void oneReturnOne1() {
-		Assert.assertEquals("1", FizzBuzz.generateResultFuzzBuzz1(1));
+		Assert.assertEquals("1", FizzBuzz.generateResultFuzzBuzz3(1));
+	}
+	@Test
+	public void twoReturnFuzz() {
+		Assert.assertEquals(FizzBuzzConstants.FUZZ, FizzBuzz.generateResultFuzzBuzz3(2));
 	}
 }
