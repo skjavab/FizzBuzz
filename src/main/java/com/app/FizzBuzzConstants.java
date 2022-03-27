@@ -10,4 +10,5 @@ public class FizzBuzzConstants {
 	public static final String FIZZ_BUZZ_POP="fizz buzz pop";
 	public static final String FUZZ="fuzz";
 	public static final String BIZZ ="bizz";
+	public static final String FUZZ_BIZZ="fuzz bizz";
 }

@@ -27,9 +27,13 @@ public class FizzBuzz {
 	}
 
 	public static String generateResultFuzzBuzz3(int number) {
-		if (number % 2 == 0)
+		if(number % 2 == 0 && number % 3 == 0)
+		{
+			return  FizzBuzzConstants.FUZZ_BIZZ;
+		}
+		else if (number % 2 == 0)
 			return  FizzBuzzConstants.FUZZ;
-		if (number % 3 == 0) 
+		else if (number % 3 == 0) 
 			return  FizzBuzzConstants.BIZZ;
 		return "1";
 	}

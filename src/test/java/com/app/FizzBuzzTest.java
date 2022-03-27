@@ -103,4 +103,8 @@ public class FizzBuzzTest {
 	public void threeReturnBizz() {
 		Assert.assertEquals(FizzBuzzConstants.BIZZ, FizzBuzz.generateResultFuzzBuzz3(3));
 	}
+	@Test
+	public void twelveReturnFizzBuzz() {
+		Assert.assertEquals(FizzBuzzConstants.FUZZ_BIZZ, FizzBuzz.generateResultFuzzBuzz3(12));
+	}
 }
