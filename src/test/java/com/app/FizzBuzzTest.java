@@ -32,7 +32,6 @@ public class FizzBuzzTest {
 	public void fifteenReturnFizzBuzz() {
 		Assert.assertEquals(FizzBuzzConstants.FIZZ_BUZZ, FizzBuzz.generateResultFuzzBuzz1(15));
 	}
- 
 
 	@Test
 	public void allcondtionsFizzBuzz() {
@@ -49,30 +48,47 @@ public class FizzBuzzTest {
 		Assert.assertEquals(FizzBuzzConstants.FIZZ, FizzBuzz.generateResultFuzzBuzz1(9));
 		Assert.assertEquals(FizzBuzzConstants.FIZZ, FizzBuzz.generateResultFuzzBuzz1(123));
 	}
-	
+
 	// Multiples of Seven Return Pop
 	@Test
 	public void sevenReturnPop() {
 		Assert.assertEquals(FizzBuzzConstants.POP, FizzBuzz.generateResultFuzzBuzz2(7));
 	}
-	
-	//Multiples of Three and Seven Return Fizz Pop
+
+	// Multiples of Three and Seven Return Fizz Pop
 	@Test
 	public void twentyOneReturnFizPop() {
 		Assert.assertEquals(FizzBuzzConstants.FIZZ_POP, FizzBuzz.generateResultFuzzBuzz2(21));
 	}
 
-	//Multiples of Three and Seven Return Fizz Pop
-		@Test
-		public void thirtyFiveReturnBuzzPop() {
-			Assert.assertEquals(FizzBuzzConstants.BUZZ_POP, FizzBuzz.generateResultFuzzBuzz2(35));
-		}
-		
-	//Multiples of Three, Five and Seven Return Fizz Buzz Pop
-		
-		@Test
-		public void hundredenFiveReturnFizzBuzzPop() {
-			Assert.assertEquals(FizzBuzzConstants.FIZZ_BUZZ_POP, FizzBuzz.generateResultFuzzBuzz2(105));
-		}
+	// Multiples of Three and Seven Return Fizz Pop
+	@Test
+	public void thirtyFiveReturnBuzzPop() {
+		Assert.assertEquals(FizzBuzzConstants.BUZZ_POP, FizzBuzz.generateResultFuzzBuzz2(35));
+	}
+
+	// Multiples of Three, Five and Seven Return Fizz Buzz Pop
+
+	@Test
+	public void hundredenFiveReturnFizzBuzzPop() {
+		Assert.assertEquals(FizzBuzzConstants.FIZZ_BUZZ_POP, FizzBuzz.generateResultFuzzBuzz2(105));
+	}
+
+	@Test
+	public void allcondtionsFizzBuzz2() {
+		Assert.assertEquals(FizzBuzzConstants.POP, FizzBuzz.generateResultFuzzBuzz2(7));
+		Assert.assertEquals(FizzBuzzConstants.POP, FizzBuzz.generateResultFuzzBuzz2(28));
+		Assert.assertEquals(FizzBuzzConstants.POP, FizzBuzz.generateResultFuzzBuzz2(77));
+		Assert.assertEquals(FizzBuzzConstants.BUZZ_POP, FizzBuzz.generateResultFuzzBuzz2(35));
+		Assert.assertEquals(FizzBuzzConstants.BUZZ_POP, FizzBuzz.generateResultFuzzBuzz2(70));
+		Assert.assertEquals(FizzBuzzConstants.BUZZ_POP, FizzBuzz.generateResultFuzzBuzz2(140));
+		Assert.assertEquals(FizzBuzzConstants.FIZZ_POP, FizzBuzz.generateResultFuzzBuzz2(21));
+		Assert.assertEquals(FizzBuzzConstants.FIZZ_POP, FizzBuzz.generateResultFuzzBuzz2(63));
+		Assert.assertEquals(FizzBuzzConstants.FIZZ_POP, FizzBuzz.generateResultFuzzBuzz2(126));
+		Assert.assertEquals(FizzBuzzConstants.FIZZ_BUZZ_POP, FizzBuzz.generateResultFuzzBuzz2(105));
+		Assert.assertEquals(FizzBuzzConstants.FIZZ_BUZZ_POP, FizzBuzz.generateResultFuzzBuzz2(210));
+		Assert.assertEquals(FizzBuzzConstants.FIZZ_BUZZ_POP, FizzBuzz.generateResultFuzzBuzz2(315));
+
+	}
 
 }
