@@ -76,16 +76,12 @@ public class FizzBuzzTest {
 
 	@Test
 	public void allcondtionsFizzBuzz2() {
-		Assert.assertEquals(FizzBuzzConstants.POP, FizzBuzz.generateResultFuzzBuzz2(7));
 		Assert.assertEquals(FizzBuzzConstants.POP, FizzBuzz.generateResultFuzzBuzz2(28));
 		Assert.assertEquals(FizzBuzzConstants.POP, FizzBuzz.generateResultFuzzBuzz2(77));
-		Assert.assertEquals(FizzBuzzConstants.BUZZ_POP, FizzBuzz.generateResultFuzzBuzz2(35));
 		Assert.assertEquals(FizzBuzzConstants.BUZZ_POP, FizzBuzz.generateResultFuzzBuzz2(70));
 		Assert.assertEquals(FizzBuzzConstants.BUZZ_POP, FizzBuzz.generateResultFuzzBuzz2(140));
-		Assert.assertEquals(FizzBuzzConstants.FIZZ_POP, FizzBuzz.generateResultFuzzBuzz2(21));
 		Assert.assertEquals(FizzBuzzConstants.FIZZ_POP, FizzBuzz.generateResultFuzzBuzz2(63));
 		Assert.assertEquals(FizzBuzzConstants.FIZZ_POP, FizzBuzz.generateResultFuzzBuzz2(126));
-		Assert.assertEquals(FizzBuzzConstants.FIZZ_BUZZ_POP, FizzBuzz.generateResultFuzzBuzz2(105));
 		Assert.assertEquals(FizzBuzzConstants.FIZZ_BUZZ_POP, FizzBuzz.generateResultFuzzBuzz2(210));
 		Assert.assertEquals(FizzBuzzConstants.FIZZ_BUZZ_POP, FizzBuzz.generateResultFuzzBuzz2(315));
 
@@ -106,5 +102,15 @@ public class FizzBuzzTest {
 	@Test
 	public void twelveReturnFizzBuzz() {
 		Assert.assertEquals(FizzBuzzConstants.FUZZ_BIZZ, FizzBuzz.generateResultFuzzBuzz3(12));
+	}
+	
+	@Test
+	public void allcondtionsFizzBuzz3() {
+		Assert.assertEquals(FizzBuzzConstants.FUZZ, FizzBuzz.generateResultFuzzBuzz3(4));
+		Assert.assertEquals(FizzBuzzConstants.FUZZ, FizzBuzz.generateResultFuzzBuzz3(8));
+		Assert.assertEquals(FizzBuzzConstants.FUZZ, FizzBuzz.generateResultFuzzBuzz3(2));
+		Assert.assertEquals(FizzBuzzConstants.BIZZ, FizzBuzz.generateResultFuzzBuzz3(9));
+		Assert.assertEquals(FizzBuzzConstants.FUZZ_BIZZ, FizzBuzz.generateResultFuzzBuzz3(24));
+
 	}
 }

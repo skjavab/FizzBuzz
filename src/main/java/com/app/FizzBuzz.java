@@ -27,15 +27,12 @@ public class FizzBuzz {
 	}
 
 	public static String generateResultFuzzBuzz3(int number) {
-		if(number % 2 == 0 && number % 3 == 0)
-		{
-			return  FizzBuzzConstants.FUZZ_BIZZ;
-		}
-		else if (number % 2 == 0)
-			return  FizzBuzzConstants.FUZZ;
-		else if (number % 3 == 0) 
-			return  FizzBuzzConstants.BIZZ;
-		return "1";
+		String result = null;
+		if (number % 2 == 0)
+			result = FizzBuzzConstants.FUZZ; //Given I have substituted multiples of two for 'fuzz'
+		 if (number % 3 == 0) 
+			result = (result==null?"":result+FizzBuzzConstants.EMTY) + FizzBuzzConstants.BIZZ; //I have substituted multiples of three for 'bizz' and it 12 also it both 3 and 4 allowed 
+		return result == null ? Integer.toString(number) : result;
 	}
 
 }

@@ -11,4 +11,5 @@ public class FizzBuzzConstants {
 	public static final String FUZZ="fuzz";
 	public static final String BIZZ ="bizz";
 	public static final String FUZZ_BIZZ="fuzz bizz";
+	public static final String EMTY=" ";
 }
