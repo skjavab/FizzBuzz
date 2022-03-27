@@ -91,4 +91,8 @@ public class FizzBuzzTest {
 
 	}
 
+	@Test
+	public void oneReturnOne1() {
+		Assert.assertEquals("1", FizzBuzz.generateResultFuzzBuzz1(1));
+	}
 }

@@ -26,4 +26,9 @@ public class FizzBuzz {
 		return result == null ? Integer.toString(number) : result;
 	}
 
+	public static String generateResultFuzzBuzz3() {
+		// TODO Auto-generated method stub
+		return "1";
+	}
+
 }
