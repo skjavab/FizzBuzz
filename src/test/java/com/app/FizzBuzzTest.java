@@ -8,7 +8,6 @@ public class FizzBuzzTest {
 	@Test
 	public void oneReturnOne() {
 		Assert.assertEquals("1", FizzBuzz.generateResultFuzzBuzz1(1));
-
 	}
 	
 	@Test
@@ -19,6 +18,11 @@ public class FizzBuzzTest {
 	@Test
 	public void fiveReturnBuzz() {
 		Assert.assertEquals(FizzBuzzConstants.BUZZ, FizzBuzz.generateResultFuzzBuzz1(5));
+	}
+	
+	@Test
+	public void fifteenReturnFizzBuzz() {
+		Assert.assertEquals(FizzBuzzConstants.FIZZ_BUZZ, FizzBuzz.generateResultFuzzBuzz1(15));
 	}
 	
 	
