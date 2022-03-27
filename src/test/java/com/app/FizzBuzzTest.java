@@ -62,4 +62,10 @@ public class FizzBuzzTest {
 		Assert.assertEquals(FizzBuzzConstants.FIZZ_POP, FizzBuzz.generateResultFuzzBuzz2(21));
 	}
 
+	//Multiples of Three and Seven Return Fizz Pop
+		@Test
+		public void thirtyFiveReturnBuzzPop() {
+			Assert.assertEquals(FizzBuzzConstants.BUZZ_POP, FizzBuzz.generateResultFuzzBuzz2(35));
+		}
+
 }
