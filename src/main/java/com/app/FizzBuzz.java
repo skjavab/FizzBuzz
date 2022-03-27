@@ -29,6 +29,8 @@ public class FizzBuzz {
 	public static String generateResultFuzzBuzz3(int number) {
 		if (number % 2 == 0)
 			return  FizzBuzzConstants.FUZZ;
+		if (number % 3 == 0) 
+			return  FizzBuzzConstants.BIZZ;
 		return "1";
 	}
 
