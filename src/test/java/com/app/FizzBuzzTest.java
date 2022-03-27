@@ -15,5 +15,12 @@ public class FizzBuzzTest {
 	public void threeReturnFizz() {
 		Assert.assertEquals(FizzBuzzConstants.FIZZ, FizzBuzz.generateResultFuzzBuzz1(3));
 	}
+	
+	@Test
+	public void fiveReturnBuzz() {
+		Assert.assertEquals(FizzBuzzConstants.BUZZ, FizzBuzz.generateResultFuzzBuzz1(5));
+	}
+	
+	
 
 }
