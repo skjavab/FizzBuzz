@@ -12,5 +12,13 @@ public class FizzBuzz {
 			result = FizzBuzzConstants.BUZZ; // Multiples of Five Return Buzz
 		return result == null ? Integer.toString(number) : result; // Normal Numbers Return Same Number
 	}
+	
+	public static String generateResultFuzzBuzz2(int number) {
+		
+		 if (number % 7 == 0)
+			 return FizzBuzzConstants.POP; // Multiples of Seven Return Pop
+		return Integer.toString(number) ;
+	}
+
 
 }

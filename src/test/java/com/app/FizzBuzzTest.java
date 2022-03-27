@@ -48,5 +48,10 @@ public class FizzBuzzTest {
 		Assert.assertEquals(FizzBuzzConstants.FIZZ, FizzBuzz.generateResultFuzzBuzz1(9));
 		Assert.assertEquals(FizzBuzzConstants.FIZZ, FizzBuzz.generateResultFuzzBuzz1(123));
 	}
+	
+	@Test
+	public void sevenReturnPop() {
+		Assert.assertEquals(FizzBuzzConstants.POP, FizzBuzz.generateResultFuzzBuzz2(7));
+	}
 
 }
