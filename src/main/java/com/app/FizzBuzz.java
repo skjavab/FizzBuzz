@@ -3,13 +3,14 @@ package com.app;
 public class FizzBuzz {
 
 	public static String generateResultFuzzBuzz1(int number) {
+		String result = null;
 		if (number % 15 == 0)
-			return FizzBuzzConstants.FIZZ_BUZZ;
+			result = FizzBuzzConstants.FIZZ_BUZZ; // Multiples of Three and Five Return Fizz Buzz
 		else if (number % 3 == 0)
-			return FizzBuzzConstants.FIZZ;
+			result = FizzBuzzConstants.FIZZ; // Multiples of Five Return Buzz
 		else if (number % 5 == 0)
-			return FizzBuzzConstants.BUZZ;
-		return Integer.toString(number);
+			result = FizzBuzzConstants.BUZZ; // Multiples of Five Return Buzz
+		return result == null ? Integer.toString(number) : result; // Normal Numbers Return Same Number
 	}
 
 }
